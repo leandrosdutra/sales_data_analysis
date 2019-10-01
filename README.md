@@ -19,7 +19,7 @@ um arquivo com as informações listadas abaixo e disponibilizado no diretório 
 ### Gerenciador de Dependências e Ferramenta de Build
 - Gradle 5.6.2
 
-### Versão de desenvolvimento
+### Versão do JDK
 - Java 11
 
 ### Bibliotecas externas utilizadas
@@ -30,7 +30,7 @@ forma leve e rápida(https://orika-mapper.github.io/orika-docs/intro.html)
 
 ### Solução adotada para o projeto
 Inicialmente todos os arquivos pré existentes no diretório de entrada 
-padrão são processados e seus respectivos arquivos de saída gerados no direório de saída padrão.
+padrão são processados e seus respectivos arquivos de saída gerados no diretório de saída padrão.
 Após essa varredura inicial, foi utilizada a interface pública Watch Service do pacote java.nio.file
 que funciona como uma espécie de monitor de eventos em um diretório especificado.
 O Watch Service(https://docs.oracle.com/javase/7/docs/api/java/nio/file/WatchService.html) permite que sejam sinalizados os eventos que devem ser monitorados, para essa solução, usei os seguintes:
